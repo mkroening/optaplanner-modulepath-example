@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+  <scanAnnotatedClasses/>
+
+  <scoreDirectorFactory>
+    <scoreDrl>io/github/mwkroening/optaplannermodulepathexample/cloudBalancingScoreRules.drl</scoreDrl>-->
+  </scoreDirectorFactory>
+
+  <termination>
+    <secondsSpentLimit>30</secondsSpentLimit>
+  </termination>
+</solver>
+
