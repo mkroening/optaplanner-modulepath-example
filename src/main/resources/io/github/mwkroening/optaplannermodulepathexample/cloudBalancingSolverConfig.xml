@@ -3,7 +3,7 @@
   <scanAnnotatedClasses/>
 
   <scoreDirectorFactory>
-    <scoreDrl>io/github/mwkroening/optaplannermodulepathexample/cloudBalancingScoreRules.drl</scoreDrl>-->
+    <scoreDrl>io/github/mwkroening/optaplannermodulepathexample/cloudBalancingScoreRules.drl</scoreDrl>
   </scoreDirectorFactory>
 
   <termination>
