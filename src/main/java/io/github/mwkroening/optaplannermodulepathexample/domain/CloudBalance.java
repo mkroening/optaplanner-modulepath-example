@@ -1,4 +1,4 @@
-package io.github.mwkroening.optaplannermodulepathexample;
+package io.github.mwkroening.optaplannermodulepathexample.domain;
 
 import java.util.List;
 import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty;

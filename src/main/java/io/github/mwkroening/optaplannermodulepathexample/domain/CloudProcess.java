@@ -1,4 +1,4 @@
-package io.github.mwkroening.optaplannermodulepathexample;
+package io.github.mwkroening.optaplannermodulepathexample.domain;
 
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;

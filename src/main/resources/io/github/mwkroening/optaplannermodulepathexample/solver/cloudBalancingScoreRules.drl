@@ -1,11 +1,11 @@
-package io.github.mwkroening.optaplannermodulepathexample;
+package io.github.mwkroening.optaplannermodulepathexample.solver;
     dialect "java"
 
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder;
 
-import io.github.mwkroening.optaplannermodulepathexample.CloudBalance;
-import io.github.mwkroening.optaplannermodulepathexample.CloudComputer;
-import io.github.mwkroening.optaplannermodulepathexample.CloudProcess;
+import io.github.mwkroening.optaplannermodulepathexample.domain.CloudBalance;
+import io.github.mwkroening.optaplannermodulepathexample.domain.CloudComputer;
+import io.github.mwkroening.optaplannermodulepathexample.domain.CloudProcess;
 
 global HardSoftScoreHolder scoreHolder;
 

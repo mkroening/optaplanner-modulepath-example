@@ -1,4 +1,4 @@
-package io.github.mwkroening.optaplannermodulepathexample;
+package io.github.mwkroening.optaplannermodulepathexample.domain;
 
 public class CloudComputer {
 
