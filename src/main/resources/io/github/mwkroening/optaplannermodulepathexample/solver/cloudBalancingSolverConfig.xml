@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solver>
-  <scanAnnotatedClasses/>
+  <!-- Workaround: "given scan urls are empty." -->
+  <solutionClass>io.github.mwkroening.optaplannermodulepathexample.domain.CloudBalance</solutionClass>
+  <entityClass>io.github.mwkroening.optaplannermodulepathexample.domain.CloudProcess</entityClass>
 
   <scoreDirectorFactory>
     <scoreDrl>io/github/mwkroening/optaplannermodulepathexample/solver/cloudBalancingScoreRules.drl</scoreDrl>
