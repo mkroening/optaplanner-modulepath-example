@@ -1,6 +1,6 @@
 plugins {
     application
-    id("org.javamodularity.moduleplugin") version "1.4.1"
+    id("org.javamodularity.moduleplugin") version "1.5.0"
 }
 
 patchModules.config = listOf(
@@ -11,12 +11,15 @@ patchModules.config = listOf(
 )
 
 application {
+    mainClassName = "$moduleName/io.github.mwkroening.optaplannermodulepathexample.App"
     applicationDefaultJvmArgs = listOf(
             // Workaround for OptaPlanner solverConfig.xml loading
             // (org.optaplanner.core.config.util.ConfigUtils)
             "--add-modules", "java.scripting",
+
             // Drools requires to access java.lang.ClassLoader.defineClass
             "--add-opens", "java.base/java.lang=org.drools.core",
+
             // XStream requires us to manually open up the JDK
             // See https://github.com/x-stream/xstream/issues/101
             "--add-opens", "java.base/java.util=xstream",
@@ -27,14 +30,11 @@ application {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
-    implementation("org.optaplanner:optaplanner-core:7.18.0.Final")
-    runtimeOnly("ch.qos.logback:logback-classic:1.2.3")
-}
-
-application {
-    mainClassName = "$moduleName/io.github.mwkroening.optaplannermodulepathexample.App"
+    implementation("org.optaplanner:optaplanner-core:7.21.0.Final")
+    implementation("org.slf4j:slf4j-api:1.8.0-beta4")
+    runtimeOnly("ch.qos.logback:logback-classic:1.3.0-alpha4")
 }
